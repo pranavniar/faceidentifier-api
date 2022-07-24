@@ -32,6 +32,7 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.get('/',(req,res)=>{res.send('it is working')});
 
 app.post('/signin', (req,res)=>signin.handleSignin(req, res, db, bcrypt));
 
